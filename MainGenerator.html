@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="./Dasar.js"></script>
+		<script type="text/javascript" src="./Dir01.js"></script>
+		<script type="text/javascript" src="./Dir02.js"></script>
+		<script type="text/javascript" src="./Dir03.js"></script>
+	</head>
+	<body>
+		<div id="Main">
+			<script type="text/javascript">
+				var Arimax = [15,20,23];
+				var nmPrint = [Print1,Print2,Print3];
+				var np = 0;
+				var no = 0
+				var maxsoal = 7;
+				for(var i=1;i<=maxsoal;i++){
+					np = RandomAngkaAtoB(-1,3);
+					//np = 1;
+					no = RandomAngkaAtoB(0,Arimax[np]);
+					//no = 20;
+					nmPrint[np](no,i);
+				}
+			</script>
+		</div>
+	</body>
+</html>
